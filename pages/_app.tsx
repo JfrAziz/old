@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Head>
     <MantineProvider withGlobalStyles withNormalizeCSS theme={{
       colorScheme: 'dark',
+      fontFamily: 'Nunito Sans'
     }}>
       <Component {...pageProps} />
     </MantineProvider>
