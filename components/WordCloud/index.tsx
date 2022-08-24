@@ -10,7 +10,8 @@ const CameraRotation = () => {
 
   return useFrame((state) => {
     const t = state.clock.elapsedTime
-    state.camera.position.lerp(v.set(20 * Math.sin(t / 5), 45, 20 * Math.cos(t / 5)), 1)
+    state.camera.position.lerp(v.set(20 * Math.sin(t / 5), 20 * Math.cos(t / 5), 45), 1)
+    state.camera.lookAt(0, 0, 0)
   })
 }
 

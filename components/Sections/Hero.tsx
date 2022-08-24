@@ -37,7 +37,13 @@ const useStyles = createStyles(theme => ({
   },
   text: {
     color: theme.colors.dark[0],
-    textDecoration: "none !important"
+    textDecoration: "none",
+
+    [":hover"]: {
+      textDecoration: "none",
+      color: theme.colors.dark[3],
+      transition: "all 0.5s ease;",
+    }
   },
   title: {
     flex: 1,
@@ -66,7 +72,7 @@ export const Hero = () => {
         </Group>
         <Group>
           <Anchor href={config.site.githubLink} className={classes.text} target="_blank">Github</Anchor>
-          <Anchor href={config.site.twitterLink}  className={classes.text} target="_blank">Twitter</Anchor>
+          <Anchor href={config.site.twitterLink} className={classes.text} target="_blank">Twitter</Anchor>
         </Group>
         <Group>
           <Triangle fill={theme.colors.dark[0]} />
