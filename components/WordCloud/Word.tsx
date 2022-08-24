@@ -17,7 +17,7 @@ export const Word: FC<WordProps> = ({ children, position }) => {
   useFrame(({ camera }) => {
     ref.current.quaternion.copy(camera.quaternion);
 
-    ref.current.material.color.lerp(color.set(hovered ? "#A3A3A3" : "#0284C7"), 0.1);
+    ref.current.material.color.lerp(color.set(hovered ? "#A3A3A3" : "#c1c2c5"), 0.1);
   });
 
   useEffect((): VoidFunction => {

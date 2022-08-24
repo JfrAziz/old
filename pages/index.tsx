@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { Hero } from '@components/Sections/Hero'
-import { SSSS } from '@components/Sections/SSSS'
+import { WordCloud } from '@components/Sections/WordCloud'
 import { createStyles } from '@mantine/core'
 
 const useStyles = createStyles(theme => ({
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <main className={classes.root}>
       <Hero />
-      <SSSS />
+      <WordCloud />
     </main>
   )
 }

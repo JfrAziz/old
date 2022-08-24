@@ -1,8 +1,7 @@
 import { config } from "@config"
-import { Square, Triangle } from "tabler-icons-react"
-import { Anchor, BackgroundImage, createStyles, Group, Text } from "@mantine/core"
 import Logo from "@public/logo.png"
-import Image from "next/image"
+import { Square, Triangle } from "tabler-icons-react"
+import { Anchor, BackgroundImage, createStyles, Group } from "@mantine/core"
 
 const useStyles = createStyles(theme => ({
   container: {
