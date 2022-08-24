@@ -7,7 +7,6 @@ const useStyles = createStyles(theme => ({
   container: {
     color: theme.colors.dark[0],
     height: "100vh",
-    width: "100vw",
     display: "flex",
     flexDirection: "column",
     zIndex: 2,
