@@ -63,8 +63,8 @@ export const WordCloud = () => {
       <Wrapper>
         <Stack justify="center">
           <div>
-            <Text className={classes.title} >I am not expert, but I&#39;ve worked with this tools</Text>
-            <Text size="sm" italic>just like other developers, I am just professional Googler :D</Text>
+            <Text className={classes.title} >I am not expert, but I&#39;ve worked with these tools</Text>
+            <Text size="sm" italic>just like the other developers, I am just professional Googler :D</Text>
           </div>
         </Stack>
         <div style={{ flex: 1 }}>
