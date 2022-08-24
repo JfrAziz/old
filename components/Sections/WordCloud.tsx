@@ -1,7 +1,7 @@
-import { WordCloudCanvas } from "@components/WordCloud"
-import { Container, createStyles, Group, MediaQuery, Stack, Text } from "@mantine/core"
 import { PropsWithChildren } from "react"
 import { Square, Triangle } from "tabler-icons-react"
+import { WordCloudCanvas } from "@components/WordCloud"
+import { Container, createStyles, Group, MediaQuery, Stack, Text } from "@mantine/core"
 
 const useStyles = createStyles(theme => ({
   container: {
@@ -56,14 +56,14 @@ const Wrapper = (props: PropsWithChildren) => {
 }
 
 export const WordCloud = () => {
-  const { classes, theme } = useStyles()
+  const { classes } = useStyles()
 
   return (
     <Container size="xl" className={classes.container}>
       <Wrapper>
         <Stack justify="center">
           <div>
-            <Text className={classes.title} >I am not expert, but I've worked with this tools</Text>
+            <Text className={classes.title} >I am not expert, but I&quot;ve worked with this tools</Text>
             <Text size="sm" italic>just like any developers, stackoverflow is my favorite :v</Text>
           </div>
         </Stack>
